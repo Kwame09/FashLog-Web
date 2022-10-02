@@ -15,44 +15,38 @@ a{
 body{
     font-size: 10px;
     font-family: sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
-header, section, footer{
-    margin: 0;
-}
-.logo{
-    margin-left: 1rem;
-    padding-left: 9%;
-}
-.door{
-    padding-left: 20%;
-    display: flex;
-}
-.door img{
-    width: 6%;
-    height: 1%;
-
-}
 header{
     font-size: 1.1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display:flex;
-    flex-direction:row;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content:space-between;
-    gap: .7rem;
-    text-transform:capitalize;
-    
-    padding-top: 1.4%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.door{
+    display: flex;
+    align-items: center;
+}
+
+.door img{
+    width: 30px;
+    height: 25px;
 }
 
 .logo img{
-    width: 169px;
+    width: 150px
 }
+
 header nav ul{
     display: flex;
-    gap: .7rem;
+    gap: 1rem;
 }
 
 .door ul{
@@ -61,127 +55,237 @@ header nav ul{
 }
 
 .page{
-    background-color: blue;
-    height: 330px;
+    background-image: url('/images/closet\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    height: 300px;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    position: relative;
     
 }
 
+.controls {
+    font-size: 1rem;
+    background: gainsboro;
+    color: gray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.controls:hover {
+    background: white;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active,
+.indicator:hover {
+    background: navy;
+}
+
 .white-board{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     justify-content: space-between;
-    height: 270px;
-    padding: 20px;
+    align-items: center;
+    height: fit-content;
+    padding: 15px 20px;
     display: flex;
     margin: 10px;
     width: 65%;
 }
 
 .roundimg{
-    border: solid;
     overflow: hidden;
 }
 
 .avatar{
-    
-    width: 250px;
-    height: 250px;
+    width: 30vmin;
+    height: 30vmin;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .inner{
-    padding-top: 60px;
     width: 60%;
     margin: 10px;
-    border: solid;
 }
 
 .white-board h1{
     font-size: 1.7rem;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(81, 81, 153);
 }
 
 .white-board p{
+    margin-top: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #707070;;
-}
-
-.left{
-    border: solid;
-}
-
-.left img{
-    height: 220px;
-    width: 220px;
-}
-
-#box{
-    display: flex;
-    padding: 10px;
 }
 
 .direct{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px 150px;
-    margin: 10px;
-    justify-content:space-between;
-    gap: 2rem;
-    border: solid;
+    margin-top: 30px;
+    gap: 1rem;
 }
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.left h1, .right h1 {
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+}
+
+.right h1 {
+    color:grey;
+}
+
+.box{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gainsboro;
+    border: 1px solid gainsboro;
+}
+
+.box img{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
 .text{
-    padding: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text p {
+    font-size: 0.9rem;
+    color: grey;
+    word-spacing: 2px;
+    line-height: 1.2rem;
+}
+
+.text h1 {
+    letter-spacing: 1px;
+}
+
+.text a {
+    background: blue;
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
 }
 
 .right{
-    justify-content: flex-start;
-    display: block;
-    border: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 250px;
+    max-width: 100%;
+}
 
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
 }
-.search{
-    padding: 10px;
-    
+
+.search input {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color: gray;
+    letter-spacing: 1px;
 }
-.search h2{
-    font-size: 20%;
-    padding-top: 20px;
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    background: blue;
+    width: fit-content;
+    padding: 8px 25px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
 }
 
 .lsection{
-    height: 270px;
-    background-color:rgb(81, 81, 153);
+    padding: 40px 0;
+    background: linear-gradient(rgba(2, 53, 131, 0.836), rgba(5, 37, 107, 0.842));
     display: flex;
-    border: solid;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 .sec2 h2{
     font-size: 17px;
 }
 .sec2 p{
-    font-size: 13px;
-    color
+    font-size: 15px;
+    font-weight: 300;
 }
 .barbut{
-    display: block;
+    display:blo;
 }
 
 .sec3 button{
     background-color: rgb(255, 166, 0);
-    color:white;
-    width: 80px;
-    height: 37px;
+    color: black;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
 }
 .sec3 input{
-    width: 200px;
-    height: 27px;
-    border-radius: 7px;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
 }
+
+.sec3 input:focus{
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
 .sec3 h3{
     font-size: 17px;
 }
@@ -200,8 +304,58 @@ header nav ul{
     padding: 10px 0px;
 }
 
+
 .social{
     display: flex;
+    gap: .5rem;
+    margin-top: 10px;
+}
+
+.social a {
+    padding: 10px;
+    background: white;
+    margin: 0;
+    border-radius: 50%;
+}
+.social img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.row{
+    display: flex;
+}
+.row h1{
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.row img{
+    height: 60px;
+    width: 120px;
+}
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sec1 a {
+    font-size: .8rem;
+    color: grey;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.sec2 h2{
+    color: white;
+}
+.sec2 p{
+    margin-top: 15px;
+    color: #c4c4c4;
+    font-size: .9rem;
+    word-spacing: 2px;
+    line-height: 1.5rem;
 }
 
 footer{
@@ -212,7 +366,7 @@ footer{
     padding-bottom: 1%;
 }
 footer .copyright {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 100;
     color: white;
   }

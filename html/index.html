@@ -11,11 +11,9 @@
     <header class="heads">
         <div class="logo">
             <img src="/images/logo.png" alt="">
-            
         </div>
 
         <nav>
-
             <div class="main-heads">
                 <ul>
                     <li><a href=" " style="color: #707070;"> Blog</a></li>
@@ -36,6 +34,7 @@
 
     <section>
         <div class="page">
+            <div class="controls controls__prev">&lt;</div>
             <div class="white-board">
                 <div class="inner">
                     <h1>Fashion Trends</h1>
@@ -49,17 +48,22 @@
                 </div>
 
             </div>
+            <div class="controls controls__next">&gt;</div>
+
+            <div class="indicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
         </div>
     </section>
 
 
     <section class="direct">
         <div class="left">
-            <div class="box1" id="box">
-                <div>
-                    <h1>Available Blogs</h1>
-                    <img src="/images/box1.jpg" alt="">
-                </div>
+            <h1>Available Blogs</h1>
+            <div class="box box1" id="box">
+                <img src="/images/box1.jpg" alt="">
                 <div class="text">
                     <h1>Title</h1>
                     <p>Video provides a powerful way to<br>
@@ -67,10 +71,10 @@
                     you click Online Video, you can <br>
                     paste in the embed code for the <br>
                     Video you want to add.</p>
-                    <button>Read More</button>
+                    <a href="">Read More</a>
                 </div>
             </div>
-            <div class="box2" id="box">
+            <div class="box box2" id="box">
                 <div>
                     <img src="/images/box2.jpeg" alt="">
                 </div>
@@ -84,7 +88,7 @@
                     <a href="">Read More</a>
                 </div>
             </div>
-            <div class="box3" id="box">
+            <div class="box box3" id="box">
                 <div>
                     <img src="/images/box3.jpg" alt="">
                 </div>
@@ -98,7 +102,7 @@
                     <a href="">Read More</a>
                 </div>
             </div>
-            <div class="box4" id="box">
+            <div class="box box4" id="box">
                 <div>
                     <img src="/images/box4.jpg" alt="">
                 </div>
@@ -115,15 +119,10 @@
         </div>
 
         <div class="right">
-            <div class="search">
-                <h2>Search</h2>
-            </div>
+            <h1>Search</h1>
 
             <div class="search">
                 <input type="text" placeholder="Search category, blog title and description">
-            </div>
-
-            <div class="search">
                 <button>Search</button>
             </div>
 
@@ -133,47 +132,54 @@
     <section>
         <div class="lsection">
             <div class="sec1" id="">
-                <img src="" alt="">
-                <h1 style="color: white;">FashLog</h1>
+                <div class="row">
+                    <img src="/images/logo.png" alt="">
+                    <h1 style="color: white;">FashLog</h1>
+                </div>
+                
                 <h2 style="color: white;">Quick Links</h2>
-                <a href="" style="color: white;">Blog</a>
-                <a href="" style="color: white;">About US</a>
-                <a href="" style="color: white;">Contact</a>
+                
+                <a href="">Blog</a>
+                <a href="">About US</a>
+                <a href="">Contact</a>
             </div>
 
             <div class="sec2">
-                <h2 style="color: white;">Our History</h2>
-                <p style="color:  #707070;">Video provides a powerful way to<br>
-                    help you<br> prove your point. When 
+                <h2>Our History</h2>
+                <p>
+                    Video provides a powerful way to
+                    help you <br> prove your point. When 
                     you click Online<br> Video, you can 
                     paste in the embed code for<br> the
-                    Video you want to add.</p>
+                    Video you want to add. You can also<br> 
+                    type keyword to search online for <br>
+                    the video that fits your document.</p>
             </div>
 
             <div class="sec3">
                 <h3 style="color: white;">Subscribe to our newsletter</h3>
                 <div class="barbut">
                     <div class="input">
-                        <input type="text" alt="Enter your email address">
+                        <input type="text" placeholder="Enter your email address">
                     </div>
                     <div class="submit">
                         <button >Submit</button>
                     </div>
-                <h4 style="color:white;">Social Handles</h4>
+                <h1 style="color:white;">Social Media Handles</h1>
                 </div>
 
                 <div class="social">
-                    <a href=" "> 
-                        <img src="" alt="">
+                    <a href="www.facebook.com"> 
+                        <img src="/images/facebook.jpeg" alt="">
                     </a>
                     <a href=" "> 
-                        <img src="" alt="">
+                        <img src="/images/IG.png" alt="">
                     </a>
                     <a href=" "> 
-                        <img src="" alt="">
+                        <img src="/images/pinterest.png" alt="">
                     </a>
                     <a href=" "> 
-                        <img src="" alt="">
+                        <img src="/images/twitter.jpeg" alt="">
                     </a>
 
                 </div>
@@ -187,7 +193,7 @@
 
     <footer>
         <div class="copyright">
-            FashLog  &copy;<script>document.write(new Date().getFullYear())</script> All Right Reserved
+            FashLog  &copy;<script>document.write(new Date().getFullYear())</script> | All Right Reserved
         </div>
     </footer>
 
