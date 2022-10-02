@@ -55,7 +55,7 @@ header nav ul{
 }
 
 .page{
-    background-image: url('/images/closet\ 1.jpg');
+    background-image: url('../images/closet\ 1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
