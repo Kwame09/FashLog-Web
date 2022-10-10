@@ -155,7 +155,7 @@ header nav ul{
     justify-content: space-between;
     padding: 10px 150px;
     margin-top: 30px;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 .left {
@@ -166,23 +166,31 @@ header nav ul{
 }
 
 .hist{
-    padding: 50px 40px;
+    padding: 40px;
     display: block;
     text-align: left;
     align-items: flex-start;
     width: 500px;
+}
+.hist p{
+    font-size: 15px;
+    color: #707070;
 }
 
 .team{
-    padding: 50px 40px;
+    padding: 40px;
     display: block;
-    text-align: left;
-    align-items: flex-start;
     width: 500px;
+    justify-content: center;
 }
+.tile h1{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
 .teammate{
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
 }
 
 
@@ -192,6 +200,14 @@ header nav ul{
     gap: 1rem;
 }
 
+
+
+
+
+
+
+
+/*
 .work{
     padding: 85px 100px;
 }
@@ -199,13 +215,51 @@ header nav ul{
 .gallery{
     padding: 85px 100px;
 }
+*/
+
 
 #box{
+    border-radius: 5px;
+    box-shadow: 0 0 5px gainsboro;
+    border: 1px solid gainsboro;
+    border-top: none;
+}
+
+#box1{
     display: flex;
     border-radius: 5px;
     box-shadow: 0 0 5px gainsboro;
     border: 1px solid gainsboro;
     border-top: none;
+    padding: 86px 80px;
+}
+
+.teammate img{
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.teammate h2{
+    color:#707070;
+}
+
+.grid-wrap{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+.grid-wrap ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, auto));
+    grid-auto-flow: dense;
+    grid-gap: 2px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0%;
 }
 
 
