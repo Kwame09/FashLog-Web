@@ -147,20 +147,26 @@ header nav ul{
     color: #707070;;
 }
 
-.direct{
+.directs{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 150px;
+    padding: 10px 90px;
     margin-top: 30px;
     gap: 1rem;
 }
 
-.left {
+.lefts {
     display: block;
+    margin: 10px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gainsboro;
+    border: 1px solid gainsboro;
+    border-top: none;
+    width: 55%;
+    justify-content: center;
     
-    gap: 1rem;
-    max-width: 100%;
 }
 
 .left h1, .right h1 {
@@ -168,7 +174,34 @@ header nav ul{
     color: black;
     font-weight: 700;
 }
+form{
+    margin: 10px;
+}
+input{
+    display: block;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+    letter-spacing: 1px ;
+    text-align: left;
 
+    /* 
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color: gray;
+    letter-spacing: 1px; */
+}
+
+
+.suggest input{
+    padding: 40px 120px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
 .right h1 {
     color:grey;
 }
@@ -230,17 +263,6 @@ header nav ul{
     gap: 0.7rem;
 }
 
-.search input {
-    padding: 7px;
-    border-radius: 5px;
-    border: 1px solid gainsboro;
-    color: gray;
-    letter-spacing: 1px;
-}
-
-.search input:focus {
-    outline: none;
-}
 
 .search button {
     background: blue;
@@ -373,14 +395,3 @@ footer .copyright {
     color: white;
   }
 
-/* ALL CONTACT INFO-SECTION */
-input{
-    display: block;
-    height: 45px;
-    width: 40%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;}
