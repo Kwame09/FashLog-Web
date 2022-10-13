@@ -157,17 +157,15 @@ header nav ul{
 }
 
 .lefts {
-    display: block;
+    display: flex;
     margin: 10px;
-    display: block;
     border-radius: 5px;
     box-shadow: 0 0 5px gainsboro;
     border: 1px solid gainsboro;
-    border-top: none;
-    width: 55%;
+    width: 50%;
     justify-content: center;
-    
 }
+
 
 .left h1, .right h1 {
     font-size: 1rem;
@@ -177,9 +175,14 @@ header nav ul{
 form{
     margin: 10px;
 }
+form h1{
+    font-size: 22px;
+    font-weight:700;
+    padding:0px 5px 15px;
+}
 input{
-    display: block;
-    border-radius: 8px;
+    display: flex;
+    border-radius: 5px;
     border: 1px solid gainsboro;
     margin-top: 8px;
     font-size: 14px;
@@ -187,6 +190,7 @@ input{
     color: gray;
     letter-spacing: 1px ;
     text-align: left;
+    padding: 11px 120px;
 
     /* 
     padding: 7px;
@@ -195,13 +199,39 @@ input{
     color: gray;
     letter-spacing: 1px; */
 }
+input::placeholder{
+    text-align: left;
+}
 
 
 .suggest input{
-    padding: 40px 120px;
+    padding: 60px 120px;
     border-radius: 8px;
     border: 1px solid gainsboro;
 }
+
+.battons{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.lbat h2{
+    padding: 8px 16px;
+    background-color: rgb(69, 69, 190);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.rbat h2{
+    padding: 8px 16px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
 .right h1 {
     color:grey;
 }
