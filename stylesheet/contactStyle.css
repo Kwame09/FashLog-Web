@@ -237,17 +237,21 @@ input::placeholder{
     font-weight: 700; */
 }
 
-.right h1 {
-    color:grey;
-}
 
+
+.cont p{
+    padding: 10px;
+    
+    
+}
 #noxa{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     box-shadow: 0 0 5px gainsboro;
     border: 1px solid gainsboro;
-    padding: 85px 70px;
+    height: 200px;
+    width: 280px;
 }
 
 .text{
