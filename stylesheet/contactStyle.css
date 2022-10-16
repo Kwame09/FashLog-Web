@@ -197,9 +197,7 @@ input{
     color: gray;
     letter-spacing: 1px; */
 }
-input::placeholder{
-    text-align: left;
-}
+
 
 
 .suggest input{
@@ -239,10 +237,14 @@ input::placeholder{
 
 
 
+.cont{
+    padding: 20px;
+}
+
 .cont p{
-    padding: 10px;
-    
-    
+    color: #707070;
+    font-size: 15px;
+    line-height: 2.5rem;
 }
 #noxa{
     display: flex;
@@ -254,58 +256,31 @@ input::placeholder{
     width: 280px;
 }
 
-.text{
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.inmap{
+    padding:16px;
 }
 
-.text p {
-    font-size: 0.9rem;
-    color: grey;
-    word-spacing: 2px;
-    line-height: 1.2rem;
+/*
+.iframe{
+    height: 200px;;
+    width: 280;
 }
+*/
 
-.text h1 {
-    letter-spacing: 1px;
-}
 
-.text a {
-    background: blue;
-    color: white;
-    font-size: 0.8rem;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block;
-    width: fit-content;
-}
 
 .right{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 5rem;
+    padding: 9px;
 }
 
-.search {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
+.right h1{
+    font-size: 23px;
 }
 
-
-.search button {
-    background: blue;
-    width: fit-content;
-    padding: 8px 25px;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-weight: 700;
-}
 
 .lsection{
     padding: 40px 0;
