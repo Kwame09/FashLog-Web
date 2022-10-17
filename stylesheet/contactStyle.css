@@ -276,7 +276,7 @@ input{
     flex-direction: column;
     border-radius: 5px;
     box-shadow: 0 0 5px gainsboro;
-    border: 1px solid gainsboro;
+    border: 2px solid gainsboro;
     height: 180px;
     width: 70%;
 }
