@@ -149,9 +149,11 @@ header nav ul{
 
 .directs{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
+    gap: 3rem;
     padding: 10px 90px;
     margin-top: 30px;
+    margin: 0 50px;
 }
 
 .lefts {
@@ -162,6 +164,7 @@ header nav ul{
     border: 1px solid gainsboro;
     width: 50%;
     justify-content: center;
+    height: 70%;
 }
 
 
@@ -179,14 +182,13 @@ form h1{
     padding:0px 5px 15px;
 }
 input{
-    display: flex;
+    display: block;
     border-radius: 5px;
     border: 1px solid gainsboro;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
     color: gray;
-    letter-spacing: 1px ;
     text-align: left;
     padding: 11px 120px;
 
@@ -238,7 +240,7 @@ input{
 
 
 .cont{
-    padding: 20px;
+    padding: 10px;
 }
 
 .cont p{
@@ -246,7 +248,19 @@ input{
     font-size: 15px;
     line-height: 2.5rem;
 }
-#noxa{
+
+
+
+#noxa1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gainsboro;
+    border: 1px solid gainsboro;
+    height: 160px;
+    width:65%;
+
+    /*
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -254,18 +268,29 @@ input{
     border: 1px solid gainsboro;
     height: 200px;
     width: 280px;
+    */
+}
+
+#noxa2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gainsboro;
+    border: 1px solid gainsboro;
+    height: 180px;
+    width: 70%;
 }
 
 .inmap{
-    padding:16px;
+    padding:10px;
 }
 
-/*
+
 .iframe{
-    height: 200px;;
-    width: 280;
+    height: 170px;;
+    width: 70%;
 }
-*/
+
 
 
 
@@ -273,13 +298,31 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5rem;
-    padding: 9px;
+    gap: 2.5rem;
+    width: 50%;
+    height: 60%;
+    margin: 10px;
 }
 
 .right h1{
     font-size: 23px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .lsection{
