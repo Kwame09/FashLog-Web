@@ -22,15 +22,9 @@ body{
     top: 50%;
 }
 
-.ojector a{
-    font-size: 150%;
-    color: #ecebf5;
-    background-color: #7892ce;
-    padding: 10px;
-    border-radius: 30px;
-    text-decoration: none;
-    opacity: .6;
-
+.ojector img{
+    height: 50px;
+    width: 80px;
 }
 
 form{
@@ -96,22 +90,35 @@ button:hover{
     background-color: #7892ce;
 
 }
+
 .social{
   margin-top: 30px;
   display: flex;
 }
+
 .social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
+  width: 300px;
   text-align: center;
 }
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
+
+.social h3{
+    font-weight: 20;
+    font-size: 1rem;
 }
+
+.social a:hover{
+    color: rgb(50, 50, 170);
+  /*background-color: rgba(255,255,255,0.47); */
+}
+.social a{
+    text-decoration: none;
+}
+
+
+
+
+
+
 .social .fb{
   margin-left: 25px;
 }
