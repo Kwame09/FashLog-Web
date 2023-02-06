@@ -23,7 +23,6 @@ header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 65%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -35,14 +34,18 @@ header{
     align-items: center;
 }
 
+/*
 .door img{
     width: 30px;
     height: 25px;
 }
+*/
+
 
 .logo img{
     width: 150px
 }
+
 
 header nav ul{
     display: flex;
@@ -53,6 +56,10 @@ header nav ul{
     display: flex;
     gap: 1rem;
 }
+.door ul li i{
+    color: grey;
+}
+
 
 .page{
     background-image: url('../images/closet\ 1.jpg');
@@ -374,3 +381,98 @@ footer .copyright {
   }
 
 /* STYLING THE ABOUT SECTION */
+
+
+
+
+
+
+
+
+
+/* Other devices */
+@media (max-width:799px){
+
+    .white-board {
+        width: 78%;
+    }
+
+    .direct {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 90px;
+        margin-top: 30px;
+        gap: 1rem;
+    }
+
+    .row h1 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: start;
+}
+
+.row {
+    display: block;
+    justify-content: space-between;
+}
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-left: 10px;
+}
+
+.row img {
+    height: 60px;
+    width: 90px;
+}
+
+.main-headers{
+    display: none;
+}
+
+
+}
+@media (max-width: 477px){
+    .direct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-top: 30px;
+    gap: 1rem;
+}
+
+
+/*footer */
+.lsection {
+    padding: 40px 0;
+    background: linear-gradient(rgba(2, 53, 131, 0.836), rgba(5, 37, 107, 0.842));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.white-board {
+    padding: 7px 10px;
+    margin: 5px;
+    width: 70%;
+}
+.inner h1{
+    font-size: 1.3rem;
+}
+
+.inner p{
+    font-size: 0.7rem;
+}
+
+/*footer*/
+.row {
+    display: flex;
+}
+
+
+}
