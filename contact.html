@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashLog</title>
+    <link rel="stylesheet" href="stylesheet/navbar-styles.css">
     <link rel="stylesheet" href="stylesheet/contactStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <script src="https://kit.fontawesome.com/f25fe94bd7.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <header class="heads">
+    <!-- <header class="heads">
         <div class="logo">
             <img src="images/logo.png" alt="">
         </div>
@@ -30,7 +34,27 @@
             </ul>
         </div>
             
-    </header>
+    </header>-->
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <span class="material-icons"><i class="fa-solid fa-bars fa-beat"></i></span>
+        </button>
+        <h1 class="navbar-title">Awars</h1>
+        <nav class="navbar-menu">
+          <button type="button">Skills</button>
+          <button type="button">Awards</button>
+          <button type="button">Projects</button>
+          <button type="button" class="close-btn" onclick="toggleMenuOpen()">
+            <span class="material-icons"><i class="fa-sharp fa-solid fa-xmark fa-beat"></i></span>
+          </button>
+        </nav>
+    </nav>
+    <script type="text/javascript">
+        const toggleMenuOpen = () => {
+          document.body.classList.toggle("open");
+        };
+    </script>
 
     <section>
         <div class="page">
@@ -44,7 +68,7 @@
                 </div>
                 
                 <div class="roundimg">
-                    <img src="images/roundimg2sis.jpg" alt="" class="avatar">
+                    <img src="images/roundimg.jpg" alt="" class="avatar">
                 </div>
 
             </div>
@@ -57,6 +81,7 @@
             </div>
         </div>
     </section>
+
 
 
     <section class="directs">
